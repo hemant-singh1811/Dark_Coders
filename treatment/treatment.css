@@ -1,0 +1,178 @@
+:root {
+    --dark-shadow: #29455a;
+    --light-shadow: #b5c2c2;
+    --primary: #fff;
+    --secondary: #23395b;
+    --accent-pink: #d81e5b;
+    --accent-mustard: #f7c550;
+    --gradient: linear-gradient(90deg,var(--secondary) -10%,var(--accent-pink) 30%,var(--accent-mustard));
+    --glass-gradient: linear-gradient(to right bottom,rgba(14,22,36,0.2),rgba(216,30,91,0.2),rgba(97,77,31,0.2));
+}
+body {
+    margin: 0;
+    font-family: -apple-system,BlinkMacSystemFont,"Segoe UI","Roboto","Oxygen","Ubuntu","Cantarell","Fira Sans","Droid Sans","Helvetica Neue",sans-serif;
+    -webkit-font-smoothing: antialiased;
+    -moz-osx-font-smoothing: grayscale;
+}
+div{
+    display: block;
+}
+.App {
+    text-align: center;
+    align-items: center;
+    overflow: hidden;
+    color: var(--secondary);
+    font-family: "Nanum Gothic",sans-serif;
+}
+.appbar, .slider {
+    z-index: 9;
+    display: flex;
+    background-color: var(--secondary);
+}
+.appbar {
+    position: fixed;
+    width: 100%;
+    color: #ffff;
+    padding: 0 15px 0 5px;
+    justify-content: space-between;
+    box-shadow: 0 1px 6px #000;
+}
+.appbar-user {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 5px;
+    margin: 0 10px;
+}
+.material{
+    width: 1em;
+    height: 1em;
+    overflow: hidden;
+    font-size: 1.5rem;
+    flex-shrink: 0;
+    user-select: none;
+}
+.MuiSvgIcon-root {
+    fill: currentColor;
+    width: 1em;
+    height: 1em;
+    display: inline-block;
+    font-size: 1.5rem;
+    transition: fill 200ms cubic-bezier(0.4, 0, 0.2, 1) 0ms;
+    flex-shrink: 0;
+    user-select: none;
+}
+svg:not(:root) {
+    overflow: hidden;
+}
+.dash-body, .heading {
+    display: flex;
+    align-items: center;
+}
+.dash-body {
+    flex-direction: column;
+    margin-top: 80px;
+}
+.quizzes {
+    width: 90%;
+}
+.heading {
+    margin: 10px;
+    flex-direction: row;
+    justify-content: space-between;
+}
+.dash-body, .heading {
+    display: flex;
+    align-items: center;
+}
+.line, .line-left {
+    height: 1px;
+    background-color: var(--light-shadow);
+    margin: 10px;
+}
+.line-left {
+    flex-grow: 1;
+}
+h2 {
+    display: block;
+    font-size: 1.5em;
+    margin-block-start: 0.83em;
+    margin-block-end: 0.83em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+    font-weight: bold;
+}
+h2 {
+    font-size: 2rem;
+}
+.line {
+    flex-grow: 10;
+}
+.card-holder {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: flex-start;
+}
+.quiz-card {
+    display: flex;
+    flex-direction: column;
+    justify-content: flex-end;
+    background-color: var(--primary);
+    color: var(--secondary);
+    box-shadow: var(--dark-shadow) 2px 3px 4px 1px;
+    width: 300px;
+    margin: 20px;
+    border-radius: 20px;
+    height: 250px;
+    padding: 20px 20px 10px;
+}
+#created-quiz-title {
+    font-size: 2rem;
+    font-weight: 700;
+    padding: 5px;
+    margin-bottom: 0;
+    text-align: left;
+}
+.card-code {
+    font-weight: 700;
+}
+.label, p {
+    font-size: 1rem;
+}
+p {
+    display: block;
+    margin-block-start: 1em;
+    margin-block-end: 1em;
+    margin-inline-start: 0px;
+    margin-inline-end: 0px;
+}
+#horizontal-line {
+    width: 300px;
+    height: 2px;
+    background-color: var(--secondary);
+}
+#row {
+    display: flex;
+    justify-content: space-between;
+}
+#questions, #responses {
+    padding: 10px;
+    font-size: 1rem;
+}
+#responses {
+    float: left;
+}
+#questions {
+    float: right;
+}
+.home, .home b {
+    font-size: 30px;
+}
+.home {
+    text-align: center;
+    font-style: normal;
+    padding: 10px;
+    color: var(--primary);
+    text-decoration: none;
+}
